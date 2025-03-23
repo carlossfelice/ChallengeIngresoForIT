@@ -1,0 +1,142 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7fafc;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Contenedor principal */
+.max-w-lg {
+  width: 100%;
+  max-width: 600px; /* Establece el tamaño máximo */
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff; /* Fondo blanco para el gestor de tareas */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Estilos del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ddd; /* Bordes claros para el input */
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f7fafc; /* Fondo ligeramente gris para resaltar */
+  color: #333; /* Texto oscuro */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4fd1c5;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #48bb78;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #38a169;
+}
+
+/* Estilos de las tareas */
+.task {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.task.completed {
+  background-color: #d4f7d4; /* Tarea completada con un fondo verde claro */
+}
+
+.task .task-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.task .task-actions button {
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Botón para marcar/desmarcar tarea (Completar) */
+.task .task-actions button.complete-btn {
+  background-color: #63b3ed; /* Azul para marcar como completada */
+  color: white;
+}
+
+.task .task-actions button.complete-btn:hover {
+  background-color: #3182ce; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Botón para eliminar tarea */
+.task .task-actions button.delete-btn {
+  background-color: #e53e3e; /* Rojo para eliminar */
+  color: white;
+}
+
+.task .task-actions button.delete-btn:hover {
+  background-color: #c53030; /* Rojo más oscuro al pasar el mouse */
+}
+
